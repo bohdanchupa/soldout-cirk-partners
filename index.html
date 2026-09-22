@@ -1,0 +1,1570 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Львівський державний цирк — партнерам і спонсорам</title>
+<meta name="description" content="Львівський державний цирк: 154 458 проданих квитків і 18 969 контактів глядачів. Шість рекламних носіїв під бренд партнера — сайт, каса, квиток, листи, розсилки.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<style>/* ─────────────────────────────────────────────────────────────────────
+   SoldOut — партнерський лендинг.
+   Стилістика знята з живого soldout.ua (2026-09-21): білий фон, шрифт Roboto,
+   акцент-індиго #2B27DA, сіра шкала #101828 / #475467 / #667085, дрібні радіуси.
+   Подання сучасніше: більше повітря, багатошарові тіні, scroll-reveal.
+   Контраст на білому: #101828 → 17,4:1 · #475467 → 7,7:1 · #667085 → 5,0:1 ·
+   #2B27DA → 8,7:1 (можна текстом, на відміну від золота).
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Base scale — з _tokens.scss */
+  --so-neutral-0:    #ffffff;
+  --so-neutral-50:   #f5f5f5;
+  --so-neutral-100:  #ebebeb;
+  --so-neutral-200:  #d4d4d4;
+  --so-neutral-300:  #b3b3b3;
+  --so-neutral-400:  #8a8a8a;
+  --so-neutral-500:  #5a5a5a;
+  --so-neutral-600:  #3d3d3d;
+  --so-neutral-700:  #262626;
+  --so-neutral-800:  #161616;
+  --so-neutral-900:  #0a0a0a;
+  --so-neutral-950:  #060606;
+  --so-neutral-1000: #000000;
+
+  /* Бренд-індиго з живого soldout.ua. Мовний перемикач, лінки, активні стани. */
+  --so-indigo-400: #5A57E4;
+  --so-indigo-500: #3531FF;
+  --so-indigo-600: #2B27DA;
+  --so-indigo-700: #211EA8;
+  --so-indigo-tint: rgb(53 49 255 / 0.06);
+
+  /* Сіра шкала soldout.ua */
+  --so-gray-900: #101828;
+  --so-gray-600: #475467;
+  --so-gray-500: #667085;
+  --so-gray-100: #EDEDED;
+  --so-gray-50:  #FAFAFA;
+
+  /* Семантика — світла тема токенів віджета */
+  --color-bg:            var(--so-neutral-0);
+  --color-bg-alt:        var(--so-gray-50);
+  --color-surface:       var(--so-neutral-0);
+  --color-surface-muted: var(--so-gray-50);
+  --color-border:        var(--so-gray-100);
+  --color-border-strong: var(--so-neutral-200);
+
+  --color-text:        var(--so-gray-900);
+  --color-text-muted:  var(--so-gray-600);
+  --color-text-subtle: var(--so-gray-500);
+
+  /* Індиго тримає 8,7:1 на білому — на відміну від золота, ним можна писати. */
+  --color-accent:          var(--so-indigo-600);
+  --color-accent-hover:    var(--so-indigo-700);
+  --color-accent-contrast: var(--so-neutral-0);
+  --color-accent-tint:     var(--so-indigo-tint);
+
+  --color-primary:          var(--so-indigo-600);
+  --color-primary-hover:    var(--so-indigo-700);
+  --color-primary-contrast: var(--so-neutral-0);
+
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px;
+
+  /* soldout.ua тримає дрібні радіуси: 3–4 px на контролах, 12 px на картках */
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px;
+  --radius-xl: 12px; --radius-pill: 4px;
+
+  --font-size-2xs: 0.6875rem; --font-size-xs: 0.75rem; --font-size-sm: 0.875rem;
+  --font-size-base: 1rem; --font-size-md: 1.0625rem; --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem; --font-size-3xl: 1.875rem;
+
+  --line-height-tight: 1.2; --line-height-snug: 1.35;
+  --line-height-normal: 1.55; --line-height-relaxed: 1.7;
+
+  --tracking-tight: -0.01em; --tracking-wide: 0.05em;
+  --tracking-wider: 0.08em;  --tracking-widest: 0.12em;
+
+  --motion-micro: 150ms; --motion-short: 240ms;
+  --motion-emphasized: 620ms;
+  --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Тіні — м'які, багатошарові; на світлому вони роблять «дорого» */
+  --shadow-xs: 0 1px 2px rgb(16 24 40 / 0.05);
+  --shadow-sm: 0 1px 2px rgb(16 24 40 / 0.06), 0 4px 12px rgb(16 24 40 / 0.05);
+  --shadow-md: 0 2px 4px rgb(16 24 40 / 0.05), 0 12px 32px rgb(16 24 40 / 0.08);
+  --shadow-lg: 0 4px 8px rgb(16 24 40 / 0.05), 0 24px 64px rgb(16 24 40 / 0.12);
+
+  --shell: 1200px;
+  --gutter: clamp(20px, 5vw, 56px);
+  --rule: 1px solid var(--color-border);
+  --font-sans: Roboto, "Helvetica Neue", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Arial, sans-serif;
+  --plot-h: clamp(220px, 26vw, 320px);
+}
+
+/* Тонована смуга — ритм між секціями без чорного */
+.section--inverse {
+  --color-bg: var(--so-gray-50);
+  --color-surface: var(--so-neutral-0);
+  --color-surface-muted: var(--so-gray-100);
+  --color-border: var(--so-neutral-200);
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
+  overflow-x: hidden;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, p, ul, ol, dl, dd, figure, figcaption { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+b, strong { font-weight: 650; }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em;
+  background: var(--color-surface-muted); padding: 2px 6px; border-radius: var(--radius-sm);
+}
+
+a { color: inherit; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.skip {
+  position: absolute; left: var(--space-4); top: -100px; z-index: 300;
+  background: var(--color-primary); color: var(--color-primary-contrast);
+  padding: var(--space-3) var(--space-5); font-weight: 600;
+  border-radius: var(--radius-pill); text-decoration: none;
+  transition: top var(--motion-short) var(--motion-ease-standard);
+}
+.skip:focus { top: var(--space-4); }
+
+.shell {
+  width: 100%; max-width: var(--shell);
+  margin-inline: auto; padding-inline: var(--gutter);
+}
+
+.icon { width: 1.25em; height: 1.25em; flex: none; }
+
+/* ── Scroll reveal — вмикається лише за наявності JS ──────────────── */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity var(--motion-emphasized) var(--motion-ease-out) var(--reveal-delay, 0ms),
+    transform var(--motion-emphasized) var(--motion-ease-out) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.js .reveal.is-in { opacity: 1; transform: none; }
+
+/* ── Nav ───────────────────────────────────────────────────────────── */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in srgb, var(--so-neutral-0) 82%, transparent);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.nav.is-stuck { border-bottom-color: var(--color-border); box-shadow: var(--shadow-xs); }
+.nav__inner { display: flex; align-items: center; gap: var(--space-6); min-height: 68px; }
+.nav__brand { text-decoration: none; display: flex; align-items: baseline; gap: var(--space-2); }
+.nav__logo { height: 24px; width: auto; color: var(--so-gray-900); }
+.nav__logo path { fill: currentColor; }
+.nav__word {
+  font-size: var(--font-size-lg); font-weight: 700;
+  letter-spacing: -0.02em; text-transform: uppercase;
+}
+.nav__sub {
+  font-size: var(--font-size-2xs); letter-spacing: var(--tracking-widest);
+  text-transform: uppercase; color: var(--color-text-subtle);
+}
+.nav__list { display: flex; gap: var(--space-1); margin-left: auto; }
+.nav__list a {
+  position: relative; display: block;
+  font-size: var(--font-size-sm); text-decoration: none;
+  color: var(--color-text-muted);
+  padding: var(--space-2) var(--space-3); border-radius: var(--radius-pill);
+  transition: color var(--motion-micro) var(--motion-ease-standard),
+              background var(--motion-micro) var(--motion-ease-standard);
+}
+.nav__list a:hover { color: var(--color-text); background: var(--color-surface-muted); }
+.nav__cta {
+  font-size: var(--font-size-sm); font-weight: 600; text-decoration: none;
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  padding: var(--space-3) var(--space-5); border-radius: var(--radius-pill);
+  transition: background var(--motion-short) var(--motion-ease-standard),
+              transform var(--motion-short) var(--motion-ease-standard);
+}
+.nav__cta:hover { background: var(--color-accent-hover); transform: translateY(-1px); }
+
+/* ── Hero ──────────────────────────────────────────────────────────── */
+.hero {
+  position: relative; overflow: hidden;
+  padding-block: clamp(var(--space-20), 15vh, 168px) clamp(var(--space-16), 11vh, 120px);
+}
+/* делікатний світловий градієнт замість плаского фону */
+.hero::before {
+  content: ""; position: absolute; inset: -30% -10% auto -10%; height: 130%;
+  background:
+    radial-gradient(60% 50% at 50% 0%, var(--color-accent-tint) 0%, transparent 70%),
+    linear-gradient(180deg, var(--so-gray-50) 0%, var(--so-neutral-0) 62%);
+  z-index: -1;
+}
+.hero__eyebrow {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: var(--font-size-xs); letter-spacing: var(--tracking-wide);
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: var(--rule); border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-4);
+  box-shadow: var(--shadow-xs);
+  margin-bottom: var(--space-8);
+}
+.hero__title {
+  font-size: clamp(2.6rem, 8.2vw, 6.5rem);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  margin-bottom: var(--space-8);
+  max-width: 16ch;
+}
+.hero__line { display: block; }
+.hero__line--jump {
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: clamp(var(--space-2), 1.4vw, var(--space-4));
+}
+.hero__from { color: var(--color-text-subtle); }
+.hero__to {
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  padding: 0 clamp(var(--space-3), 1.4vw, var(--space-5)) 0.08em;
+  border-radius: clamp(var(--radius-md), 1.4vw, var(--radius-xl));
+}
+.hero__arrow-svg {
+  width: clamp(1.8rem, 4.6vw, 3.4rem); height: clamp(1.8rem, 4.6vw, 3.4rem);
+  stroke-width: 1.5; color: var(--color-text-subtle);
+}
+.hero__lead {
+  max-width: 60ch; font-size: clamp(var(--font-size-lg), 1.5vw, var(--font-size-xl));
+  color: var(--color-text-muted); margin-bottom: var(--space-12);
+  line-height: var(--line-height-normal);
+}
+.hero__facts {
+  display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: var(--space-10);
+}
+.hero__fact {
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.hero__fact:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.hero__fact dt {
+  font-size: var(--font-size-2xs); text-transform: uppercase;
+  letter-spacing: var(--tracking-widest); color: var(--color-text-subtle);
+  margin-bottom: var(--space-3);
+}
+.hero__fact dd { display: flex; flex-direction: column; gap: var(--space-1); }
+.hero__fact b {
+  font-size: clamp(var(--font-size-xl), 2.4vw, var(--font-size-3xl));
+  letter-spacing: -0.03em; line-height: 1.1; font-weight: 700;
+}
+.hero__fact span { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.hero__fact--period b { font-size: var(--font-size-lg); letter-spacing: -0.01em; }
+
+.hero__cta { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+/* ── Buttons ───────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--space-2); min-height: 52px;
+  padding: var(--space-3) var(--space-8);
+  font: inherit; font-weight: 600; font-size: var(--font-size-base);
+  letter-spacing: -0.005em; text-decoration: none; cursor: pointer;
+  border: 1px solid transparent; border-radius: var(--radius-pill);
+  transition: background var(--motion-short) var(--motion-ease-standard),
+              color var(--motion-short) var(--motion-ease-standard),
+              border-color var(--motion-short) var(--motion-ease-standard),
+              transform var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.btn--primary {
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  box-shadow: var(--shadow-sm);
+}
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-2px); box-shadow: var(--shadow-md);
+}
+.btn--ghost {
+  background: var(--color-surface); color: var(--color-text);
+  border-color: var(--color-border-strong);
+}
+.btn--ghost:hover { border-color: var(--color-primary); transform: translateY(-2px); }
+.btn--lg { min-height: 58px; padding-inline: var(--space-10); font-size: var(--font-size-lg); }
+.btn[disabled] {
+  cursor: not-allowed; transform: none; box-shadow: none;
+  background: var(--color-surface-muted); color: var(--color-text-subtle);
+  border: 1px dashed var(--color-border-strong);
+}
+
+/* ── Section skeleton ──────────────────────────────────────────────── */
+.section {
+  background: var(--color-bg); color: var(--color-text);
+  padding-block: clamp(var(--space-20), 12vh, 152px);
+}
+.section--inverse { border-block: var(--rule); }
+.section__head { margin-bottom: clamp(var(--space-12), 7vh, var(--space-20)); max-width: 90ch; }
+.section__eyebrow {
+  display: flex; align-items: center; gap: var(--space-3);
+  font-size: var(--font-size-xs); text-transform: uppercase;
+  letter-spacing: var(--tracking-wider); color: var(--color-text-subtle);
+  margin-bottom: var(--space-5);
+}
+.section__index {
+  font-size: var(--font-size-2xs); font-weight: 700;
+  color: var(--color-text-muted);
+  background: var(--color-surface-muted);
+  border-radius: var(--radius-pill); padding: 3px var(--space-3);
+}
+.section__title {
+  font-size: clamp(1.85rem, 3.8vw, 3.1rem);
+  line-height: 1.15; letter-spacing: -0.02em; font-weight: 700;
+  max-width: 24ch; text-wrap: balance;
+}
+.section__title em {
+  font-style: normal; display: block;
+  color: var(--color-text-subtle); font-weight: 500;
+}
+.section__lead {
+  margin-top: var(--space-5); max-width: 62ch;
+  font-size: var(--font-size-lg); color: var(--color-text-muted);
+}
+.h3 {
+  font-size: var(--font-size-xl); font-weight: 650;
+  letter-spacing: -0.02em; margin-bottom: var(--space-3);
+}
+.h3--spaced { margin-top: var(--space-16); }
+.muted { color: var(--color-text-muted); font-size: var(--font-size-base); }
+
+.split {
+  display: grid; gap: clamp(var(--space-8), 4vw, var(--space-16));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: var(--space-16);
+}
+.split p + p { margin-top: var(--space-4); }
+.split__col > p { color: var(--color-text-muted); max-width: 60ch; }
+
+.list { display: grid; gap: var(--space-3); color: var(--color-text-muted); }
+.list li { padding-left: var(--space-6); position: relative; }
+.list li::before {
+  content: ""; position: absolute; left: 0; top: 0.68em;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--color-border-strong);
+}
+.list--check li::before { background: var(--color-accent); }
+
+/* ── Stats ─────────────────────────────────────────────────────────── */
+.stats {
+  display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.stats--case { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.stat {
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+  display: flex; flex-direction: column; gap: var(--space-1);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.stat:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.stat__icon {
+  color: var(--color-text-subtle); margin-bottom: var(--space-4);
+  width: 40px; height: 40px; border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+  display: grid; place-items: center;
+}
+.stat__icon .icon { width: 20px; height: 20px; }
+.stat__value {
+  font-size: clamp(2rem, 3.4vw, 2.75rem); font-weight: 700;
+  line-height: 1; letter-spacing: -0.04em;
+}
+.stat__unit {
+  font-size: var(--font-size-base); color: var(--color-text);
+  line-height: var(--line-height-snug); margin-top: var(--space-3);
+  max-width: 24ch;
+}
+.stat__period {
+  font-size: var(--font-size-2xs); text-transform: uppercase;
+  letter-spacing: var(--tracking-wide); color: var(--color-text-subtle);
+  margin-top: var(--space-2);
+}
+.stat__note {
+  font-size: var(--font-size-sm); color: var(--color-text-muted);
+  margin-top: var(--space-3); line-height: var(--line-height-normal);
+}
+.stat__delta { margin-top: var(--space-4); }
+
+.delta {
+  display: inline-flex; align-items: baseline; gap: var(--space-2);
+  font-size: var(--font-size-sm); font-weight: 650;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent); color: var(--color-accent-contrast);
+}
+.delta__label { font-weight: 400; font-size: var(--font-size-2xs); opacity: 0.8; }
+
+/* ── Caveat ────────────────────────────────────────────────────────── */
+.caveat {
+  display: flex; gap: var(--space-3); align-items: flex-start;
+  margin-top: var(--space-6); padding: var(--space-5);
+  background: var(--color-surface-muted);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm); color: var(--color-text-muted);
+  line-height: var(--line-height-normal);
+}
+.caveat__icon { margin-top: 0.15em; color: var(--color-text); }
+
+/* ── Charts ────────────────────────────────────────────────────────── */
+.figure { margin: 0; }
+.figure figcaption {
+  margin-top: var(--space-5); font-size: var(--font-size-sm);
+  color: var(--color-text-subtle); max-width: 70ch;
+}
+.chart {
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: clamp(var(--space-5), 3vw, var(--space-10));
+  box-shadow: var(--shadow-sm);
+}
+.chart-data { margin-top: var(--space-6); border-top: var(--rule); }
+.chart-data summary {
+  cursor: pointer; padding: var(--space-4) 0 0;
+  font-size: var(--font-size-sm); color: var(--color-text-muted);
+  list-style: none;
+}
+.chart-data summary::-webkit-details-marker { display: none; }
+.chart-data summary::before { content: "＋ "; font-weight: 600; }
+.chart-data[open] summary::before { content: "− "; }
+.chart-data summary:hover { color: var(--color-text); }
+.chart-data__scroll { overflow-x: auto; padding-block: var(--space-4); }
+.chart-data table { border-collapse: collapse; width: 100%; font-size: var(--font-size-sm); }
+.chart-data th, .chart-data td {
+  text-align: right; padding: var(--space-3);
+  border-bottom: var(--rule); white-space: nowrap;
+}
+.chart-data thead th {
+  color: var(--color-text-subtle); font-size: var(--font-size-xs);
+  text-transform: uppercase; letter-spacing: var(--tracking-wide); font-weight: 500;
+}
+.chart-data tbody th { text-align: left; font-weight: 500; color: var(--color-text); }
+.chart-data tbody tr:hover td, .chart-data tbody tr:hover th {
+  background: var(--color-surface-muted);
+}
+
+/* Column chart */
+.chart--column .chart__plot {
+  display: grid; grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-5); align-items: end;
+}
+.chart__axis {
+  display: flex; flex-direction: column; justify-content: space-between;
+  height: var(--plot-h);
+  font-size: var(--font-size-2xs); color: var(--color-text-subtle);
+  text-align: right;
+}
+.chart__tick { line-height: 1; transform: translateY(-50%); }
+.chart__tick:first-child { transform: none; }
+.chart__tick:last-child { transform: translateY(-100%); }
+.chart__cols {
+  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr);
+  gap: clamp(4px, 1vw, 14px);
+  background-image: repeating-linear-gradient(
+    to top, var(--color-border) 0 1px, transparent 1px 25%);
+  background-size: 100% var(--plot-h);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.chart__col {
+  display: grid; grid-template-rows: var(--plot-h) auto;
+  align-items: end; min-width: 0;
+}
+.chart__bar {
+  position: relative; align-self: end;
+  height: calc(var(--v) * var(--plot-h));
+  min-height: 3px;
+  background: var(--so-neutral-300);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: background var(--motion-short) var(--motion-ease-standard);
+}
+.chart__col:hover .chart__bar { background: var(--so-neutral-500); }
+.chart__col.is-peak .chart__bar { background: var(--color-accent); }
+.chart__value {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  padding-bottom: var(--space-2);
+  font-size: var(--font-size-2xs); color: var(--color-text-subtle);
+  white-space: nowrap;
+}
+.chart__col.is-peak .chart__value { color: var(--color-text); font-weight: 650; }
+.chart__label {
+  margin-top: var(--space-4); padding-top: var(--space-3);
+  border-top: var(--rule);
+  font-size: var(--font-size-2xs); color: var(--color-text-subtle);
+  text-align: center; white-space: nowrap;
+}
+
+/* Rank list */
+.rank { display: grid; }
+.rank__row {
+  display: grid; align-items: center;
+  grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  padding-block: var(--space-4);
+  border-bottom: var(--rule);
+}
+.rank__row:last-child { border-bottom: 0; }
+.rank__name { font-size: var(--font-size-base); }
+.rank__row.is-lead .rank__name { font-weight: 700; }
+.rank__track {
+  height: 10px; background: var(--color-surface-muted);
+  border-radius: var(--radius-pill); overflow: hidden;
+}
+.rank__fill {
+  display: block; height: 100%; width: calc(var(--v) * 100%);
+  min-width: 3px; background: var(--so-neutral-300);
+  border-radius: var(--radius-pill);
+}
+.rank__row.is-lead .rank__fill { background: var(--color-accent); }
+.rank__value {
+  display: flex; align-items: baseline; gap: var(--space-2);
+  font-size: var(--font-size-base); font-weight: 650; min-width: 9ch;
+  justify-content: flex-end;
+}
+.rank__extra { font-weight: 400; font-size: var(--font-size-sm); color: var(--color-text-subtle); }
+
+/* ── Geography ─────────────────────────────────────────────────────── */
+.geo {
+  display: grid; gap: clamp(var(--space-8), 4vw, var(--space-16));
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: start;
+}
+.geo__side > p { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+.callout {
+  border-radius: var(--radius-lg);
+  padding: var(--space-8); margin-bottom: var(--space-8);
+}
+.callout--strong {
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  box-shadow: var(--shadow-md);
+}
+.callout__value {
+  font-size: clamp(2.75rem, 6vw, 4.25rem); font-weight: 700;
+  line-height: 1; letter-spacing: -0.03em;
+}
+.callout__aside-value { color: var(--color-accent-contrast); }
+.callout__label { margin-top: var(--space-3); font-size: var(--font-size-lg); font-weight: 600; }
+.callout--base {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: clamp(var(--space-6), 4vw, var(--space-12));
+  align-items: end; margin-bottom: var(--space-8);
+}
+.callout--base .callout__value { font-size: clamp(3rem, 7.5vw, 5.5rem); }
+.callout__aside {
+  border-left: 1px solid rgb(255 255 255 / 0.18);
+  padding-left: clamp(var(--space-5), 3vw, var(--space-8));
+}
+.callout__aside-value {
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem); font-weight: 700;
+  letter-spacing: -0.04em; line-height: 1;
+}
+.callout__aside-label {
+  margin-top: var(--space-3); font-size: var(--font-size-sm);
+  color: rgb(255 255 255 / 0.88); line-height: var(--line-height-normal);
+}
+.callout__period {
+  margin-top: var(--space-3); font-size: var(--font-size-2xs);
+  text-transform: uppercase; letter-spacing: var(--tracking-wide); opacity: 0.7;
+}
+
+/* ── Carriers ──────────────────────────────────────────────────────── */
+.carriers {
+  display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.carrier {
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+  display: flex; flex-direction: column; gap: var(--space-2);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.carrier:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.carrier--primary {
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  border-color: var(--color-accent); box-shadow: var(--shadow-lg);
+}
+.carrier__step {
+  font-size: var(--font-size-2xs); font-weight: 700;
+  letter-spacing: var(--tracking-widest); color: var(--color-text-subtle);
+}
+.carrier--primary .carrier__step { color: rgb(255 255 255 / 0.72); }
+.carrier__icon {
+  margin-block: var(--space-3) var(--space-2);
+  width: 44px; height: 44px; border-radius: var(--radius-md);
+  background: var(--color-surface-muted); display: grid; place-items: center;
+}
+.carrier--primary .carrier__icon { background: rgb(255 255 255 / 0.12); }
+.carrier__icon .icon { width: 22px; height: 22px; }
+.carrier__name {
+  font-size: var(--font-size-lg); font-weight: 650; letter-spacing: -0.02em;
+}
+.carrier__what { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.carrier--primary .carrier__what { color: rgb(255 255 255 / 0.88); }
+.carrier__reach {
+  margin-top: auto; padding-top: var(--space-5);
+  font-size: var(--font-size-sm); color: var(--color-text-subtle);
+}
+.carrier--primary .carrier__reach { color: var(--so-neutral-0); font-weight: 600; }
+.tag {
+  display: inline-block; font-size: var(--font-size-2xs); font-weight: 600;
+  text-transform: uppercase; letter-spacing: var(--tracking-wide);
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  border-radius: var(--radius-pill);
+  padding: 2px var(--space-3); vertical-align: middle;
+}
+
+/* Сервіси — двоколонковий перелік із іконками */
+.services {
+  display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.service {
+  display: flex; gap: var(--space-4); align-items: flex-start;
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.service:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.service__icon {
+  flex: none; width: 40px; height: 40px; border-radius: var(--radius-md);
+  background: var(--color-accent-tint); color: var(--color-accent);
+  display: grid; place-items: center;
+}
+.service__icon .icon { width: 20px; height: 20px; }
+.service__name {
+  font-size: var(--font-size-base); font-weight: 650;
+  letter-spacing: -0.01em; margin-bottom: var(--space-2);
+}
+.service__text { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+/* Категорії спонсорів */
+.kinds {
+  display: flex; flex-wrap: wrap; gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+.kind {
+  font-size: var(--font-size-sm); font-weight: 500;
+  background: var(--color-surface); border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill); padding: var(--space-3) var(--space-5);
+}
+
+.carriers--six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.kpis--projects, .kpis--why { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.figure--second { margin-top: var(--space-10); }
+
+/* ── Steps / KPI ───────────────────────────────────────────────────── */
+.steps { display: grid; gap: var(--space-4); grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.step {
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--motion-short) var(--motion-ease-standard),
+              box-shadow var(--motion-short) var(--motion-ease-standard);
+}
+.step:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.step__n {
+  font-size: var(--font-size-sm); font-weight: 700;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--color-accent); color: var(--color-accent-contrast);
+  display: grid; place-items: center;
+  margin-bottom: var(--space-5);
+}
+.step__t {
+  font-size: var(--font-size-lg); font-weight: 650;
+  margin-bottom: var(--space-2); letter-spacing: -0.02em;
+}
+.step__d { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+.kpis { display: grid; gap: var(--space-4); grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.kpi {
+  display: grid; gap: var(--space-2); align-content: start;
+  background: var(--color-surface-muted); border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+.kpi__icon { color: var(--color-text); margin-bottom: var(--space-2); }
+.kpi__t { font-weight: 650; font-size: var(--font-size-base); }
+.kpi__d { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+/* ── CTA ───────────────────────────────────────────────────────────── */
+.section--cta .section__title { max-width: 18ch; }
+.cta {
+  display: grid; gap: clamp(var(--space-8), 4vw, var(--space-16));
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  align-items: start;
+}
+.cta__lead {
+  font-size: var(--font-size-xl); margin-bottom: var(--space-8);
+  line-height: var(--line-height-normal);
+}
+.cta__blocked {
+  background: var(--color-surface); border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-lg); padding: var(--space-8);
+}
+.cta__blocked-title {
+  display: flex; align-items: center; gap: var(--space-2);
+  font-weight: 700; font-size: var(--font-size-base); margin-bottom: var(--space-3);
+}
+.cta__blocked p { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.cta__blocked .btn { margin-top: var(--space-6); width: 100%; }
+.cta__blocked-hint {
+  margin-top: var(--space-4); font-size: var(--font-size-xs); color: var(--color-text-subtle);
+}
+
+.contact-card {
+  background: var(--color-surface); border: var(--rule);
+  border-radius: var(--radius-lg); padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+}
+.contact-card__label {
+  font-size: var(--font-size-2xs); text-transform: uppercase;
+  letter-spacing: var(--tracking-widest); color: var(--color-text-subtle);
+  margin-bottom: var(--space-4);
+}
+.contact-card__mail {
+  display: inline-flex; align-items: center; gap: var(--space-3);
+  font-size: clamp(var(--font-size-lg), 2vw, var(--font-size-2xl));
+  font-weight: 650; letter-spacing: -0.02em;
+  text-decoration: none; border-bottom: 2px solid var(--color-border-strong);
+  padding-bottom: var(--space-1);
+  transition: border-color var(--motion-short) var(--motion-ease-standard);
+  max-width: 100%; overflow-wrap: anywhere;
+}
+.contact-card__mail:hover { border-bottom-color: var(--color-accent); }
+.contact-card .btn { margin-top: var(--space-6); width: 100%; }
+.contact-card__alt {
+  margin-top: var(--space-6); font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+.contact-card__alt a { overflow-wrap: anywhere; }
+.contact-card__entity {
+  margin-top: var(--space-4); padding-top: var(--space-4);
+  border-top: var(--rule);
+  font-size: var(--font-size-xs); color: var(--color-text-subtle);
+}
+.footer__contact {
+  margin-top: var(--space-12); font-size: var(--font-size-base);
+  color: var(--color-text-muted); overflow-wrap: anywhere;
+}
+.footer__contact a { font-weight: 600; color: var(--color-text); }
+.footer__contact + .footer__legal { margin-top: var(--space-6); }
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+.footer {
+  background: var(--so-neutral-50);
+  border-top: var(--rule);
+  padding-block: clamp(var(--space-16), 10vh, 120px);
+  font-size: var(--font-size-base);
+}
+.footer__title {
+  font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 700;
+  letter-spacing: -0.03em; margin-bottom: var(--space-12);
+}
+.footer__grid {
+  display: grid; gap: clamp(var(--space-8), 4vw, var(--space-12));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.footer__block p { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.footer__block p + p { margin-top: var(--space-3); }
+.footer__block .list { font-size: var(--font-size-sm); }
+.fn { display: grid; gap: var(--space-4); counter-reset: fn; }
+.fn li {
+  counter-increment: fn; position: relative; padding-left: var(--space-8);
+  color: var(--color-text-muted); font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+.fn li::before {
+  content: counter(fn); position: absolute; left: 0; top: 0.1em;
+  font-size: var(--font-size-xs); font-weight: 700; color: var(--color-primary-contrast);
+  background: var(--color-primary); border-radius: 50%;
+  width: 20px; height: 20px; display: grid; place-items: center;
+}
+.fn-ref {
+  font-size: 0.72em; vertical-align: super; font-weight: 700;
+  text-decoration: none; padding-inline: 2px; color: var(--color-text);
+}
+.fn-ref:hover { text-decoration: underline; }
+.fn-back { text-decoration: none; margin-left: var(--space-1); }
+.footer__legal {
+  margin-top: var(--space-16); padding-top: var(--space-6);
+  border-top: var(--rule); color: var(--color-text-subtle);
+  font-size: var(--font-size-sm); max-width: 90ch;
+}
+:target { scroll-margin-top: 92px; }
+
+/* ── 1024 ──────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .stats, .stats--case { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .carriers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .steps, .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services, .carriers--six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kpis--projects, .kpis--why { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .geo, .cta { grid-template-columns: minmax(0, 1fr); }
+  .footer__grid { grid-template-columns: minmax(0, 1fr); }
+  .nav__list { gap: 0; }
+  .nav__list a { padding-inline: var(--space-2); font-size: var(--font-size-xs); }
+}
+
+/* ── 768: перебудова, не звуження ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav__list { display: none; }
+  .nav__cta { margin-left: auto; }
+  .hero__title { max-width: none; }
+  .hero__facts { grid-template-columns: minmax(0, 1fr); }
+  .split { grid-template-columns: minmax(0, 1fr); }
+  .section__title { max-width: none; }
+}
+
+/* ── 640: графіки лягають у рядки ──────────────────────────────────── */
+@media (max-width: 640px) {
+  :root { --plot-h: auto; }
+
+  .chart--column .chart__plot { grid-template-columns: minmax(0, 1fr); }
+  .chart__axis { display: none; }
+  .chart__cols { grid-auto-flow: row; grid-auto-columns: auto; gap: 0; background-image: none; }
+  .chart__col {
+    grid-template-rows: none;
+    grid-template-columns: 4.75rem minmax(0, 1fr);
+    align-items: center; gap: var(--space-3);
+    padding-block: var(--space-3);
+    /* місце під підпис значення праворуч від смуги */
+    padding-right: 5.25rem;
+    border-bottom: var(--rule);
+  }
+  .chart__col:last-child { border-bottom: 0; }
+  .chart__label {
+    order: -1; margin: 0; padding: 0; border: 0; text-align: left;
+    font-size: var(--font-size-xs); color: var(--color-text-muted);
+  }
+  .chart__bar {
+    height: 20px; width: calc(var(--v) * 100%);
+    border-radius: 0 var(--radius-pill) var(--radius-pill) 0;
+  }
+  .chart__value {
+    position: absolute; left: 100%; right: auto; top: 0; bottom: auto;
+    transform: none; padding-left: var(--space-3); padding-bottom: 0;
+    line-height: 20px; white-space: nowrap;
+  }
+
+  .rank__row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-3); }
+  .rank__track { grid-column: 1 / -1; order: 3; }
+
+  .stats, .stats--case, .carriers, .steps, .kpis { grid-template-columns: minmax(0, 1fr); }
+  .services, .carriers--six, .kpis--projects, .kpis--why {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .callout--base { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .callout__aside { border-left: 0; border-top: 1px solid rgb(255 255 255 / 0.18);
+    padding-left: 0; padding-top: var(--space-5); }
+  .chart-data th, .chart-data td { white-space: normal; }
+}
+
+/* ── Motion ────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media print {
+  .nav, .skip { display: none; }
+  .js .reveal { opacity: 1; transform: none; }
+  .chart, .stat, .carrier, .step { box-shadow: none; }
+}
+</style>
+<script>
+/* Стартовий стан reveal вмикаємо ТІЛЬКИ якщо є чим його зняти.
+   Немає IntersectionObserver або вимкнений JS → контент видимий завжди. */
+if ('IntersectionObserver' in window) document.documentElement.classList.add('js');
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до змісту</a>
+
+<nav class="nav" aria-label="Розділи сторінки">
+  <div class="shell nav__inner">
+    <a class="nav__brand" href="#hero">
+      <svg class="nav__logo" role="img" aria-label="SoldOut" viewBox="0 0 159 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M38.8705 24.9962C37.5076 24.9962 36.1764 24.8054 34.9085 24.4555C33.6407 24.0737 32.6264 23.5966 31.834 22.9922L33.1969 19.9704C33.9259 20.5111 34.8134 20.9564 35.8277 21.2745C36.842 21.5926 37.8563 21.7835 38.9022 21.7835C40.0433 21.7835 40.8674 21.6244 41.4062 21.2745C41.9451 20.9246 42.2303 20.4793 42.2303 19.9067C42.2303 19.4932 42.0718 19.1433 41.7232 18.8888C41.4062 18.6026 40.9942 18.3799 40.487 18.2208C39.9799 18.0618 39.3143 17.8709 38.4585 17.6801C37.1272 17.362 36.0496 17.0439 35.2255 16.7258C34.4014 16.4077 33.6724 15.8988 33.0384 15.199C32.4362 14.4992 32.1509 13.5767 32.1509 12.4316C32.1509 11.4137 32.4362 10.523 32.975 9.69597C33.5139 8.86893 34.338 8.23275 35.4156 7.7238C36.525 7.24666 37.8563 6.99219 39.4411 6.99219C40.5504 6.99219 41.6281 7.11942 42.6741 7.3739C43.72 7.62837 44.6392 8.01008 45.4316 8.51903L44.1955 11.5727C42.6107 10.6503 40.9942 10.2049 39.4094 10.2049C38.3 10.2049 37.4442 10.3958 36.9054 10.7457C36.3665 11.0956 36.113 11.5727 36.113 12.1771C36.113 12.7815 36.4299 13.2268 37.0322 13.5131C37.6661 13.7994 38.617 14.0856 39.8848 14.3401C41.216 14.6582 42.2937 14.9763 43.1178 15.2944C43.9419 15.6125 44.6709 16.0896 45.2732 16.7894C45.8754 17.4574 46.1923 18.3799 46.1923 19.525C46.1923 20.5111 45.9071 21.4336 45.3682 22.2606C44.8294 23.0559 44.0053 23.7238 42.8959 24.201C41.7866 24.7417 40.4553 24.9962 38.8705 24.9962ZM57.3177 24.9962C55.511 24.9962 53.8945 24.6145 52.4682 23.8193C51.0419 23.0559 49.9008 21.9743 49.0767 20.6384C48.2843 19.2706 47.8722 17.7437 47.8722 16.026C47.8722 14.3401 48.2843 12.8133 49.0767 11.4455C49.9008 10.0777 51.0419 8.99617 52.4682 8.23275C53.9262 7.46933 55.5427 7.05581 57.3177 7.05581C59.1244 7.05581 60.7092 7.43752 62.1672 8.23275C63.5935 8.99617 64.7346 10.0777 65.5587 11.4455C66.3828 12.8133 66.7948 14.3401 66.7948 16.026C66.7948 17.7119 66.3828 19.2706 65.5587 20.6384C64.7346 22.0061 63.5935 23.0559 62.1672 23.8193C60.7092 24.6145 59.0927 24.9962 57.3177 24.9962ZM57.3177 21.5926C58.332 21.5926 59.2512 21.37 60.0753 20.8928C60.8994 20.4157 61.5333 19.7477 62.0087 18.9207C62.4842 18.0936 62.7377 17.1075 62.7377 16.0578C62.7377 14.9763 62.4842 14.022 62.0087 13.195C61.5333 12.3679 60.8994 11.7 60.0753 11.2228C59.2512 10.7457 58.332 10.4912 57.3177 10.4912C56.3034 10.4912 55.3842 10.7457 54.5601 11.2228C53.736 11.7 53.1021 12.3361 52.595 13.195C52.1195 14.022 51.8976 15.0081 51.8976 16.0578C51.8976 17.1393 52.1195 18.0936 52.595 18.9207C53.0704 19.7477 53.736 20.4157 54.5601 20.8928C55.3525 21.3382 56.2717 21.5926 57.3177 21.5926ZM69.7743 7.3739H73.768V21.4336H82.4211V24.7099H69.7743V7.3739ZM84.6715 7.3739H92.5321C94.4022 7.3739 96.0504 7.7238 97.5084 8.45541C98.9664 9.15522 100.076 10.1731 100.868 11.4773C101.661 12.7815 102.073 14.3083 102.073 16.026C102.073 17.7755 101.661 19.2706 100.868 20.5747C100.076 21.8789 98.9664 22.8968 97.5084 23.6284C96.0821 24.3282 94.4339 24.6781 92.5321 24.6781H84.6715V7.3739ZM92.3103 21.4018C94.0535 21.4018 95.4165 20.9246 96.4308 19.9704C97.4767 18.9843 97.9839 17.6801 97.9839 16.026C97.9839 14.3719 97.4767 13.0678 96.4308 12.1135C95.4165 11.1274 94.0218 10.6503 92.3103 10.6503H88.6652V21.4018H92.3103Z" fill="white"></path> <path d="M115.386 24.8109C113.674 24.8109 112.121 24.4292 110.727 23.6658C109.332 22.9024 108.254 21.8209 107.462 20.4849C106.701 19.1489 106.289 17.6539 106.289 15.968C106.289 14.3139 106.669 12.787 107.462 11.4511C108.254 10.1151 109.332 9.06536 110.727 8.30194C112.121 7.53852 113.674 7.125 115.386 7.125C117.097 7.125 118.651 7.50671 120.013 8.27013C121.408 9.03355 122.486 10.0833 123.278 11.4511C124.071 12.787 124.451 14.2821 124.451 15.968C124.451 17.622 124.071 19.1489 123.278 20.5167C122.486 21.8527 121.408 22.9024 120.013 23.6658C118.651 24.4292 117.097 24.8109 115.386 24.8109ZM115.386 23.1887C116.749 23.1887 117.985 22.8706 119.094 22.2662C120.204 21.63 121.059 20.7712 121.693 19.6896C122.327 18.5763 122.644 17.3676 122.644 15.9998C122.644 14.632 122.327 13.4232 121.693 12.3417C121.059 11.2284 120.204 10.3695 119.094 9.76517C117.985 9.12898 116.749 8.81089 115.386 8.81089C114.023 8.81089 112.787 9.12898 111.646 9.76517C110.536 10.3695 109.681 11.2284 109.015 12.3417C108.381 13.4232 108.064 14.6638 108.064 15.9998C108.064 17.3676 108.381 18.5763 109.015 19.6896C109.649 20.7712 110.536 21.63 111.646 22.2662C112.787 22.8706 114.023 23.1887 115.386 23.1887ZM135.513 24.8109C133.262 24.8109 131.519 24.1748 130.283 22.8706C129.047 21.5982 128.413 19.7215 128.413 17.2403V7.34766H130.251V17.2085C130.251 19.2125 130.695 20.7394 131.614 21.7254C132.533 22.7115 133.833 23.2205 135.545 23.2205C137.288 23.2205 138.587 22.7115 139.507 21.7254C140.426 20.7394 140.87 19.2443 140.87 17.2085V7.34766H142.645V17.2721C142.645 19.7215 142.011 21.5982 140.774 22.9024C139.475 24.1748 137.763 24.8109 135.513 24.8109ZM151.107 8.90632H145.022V7.31585H159V8.90632H152.914V24.6519H151.076V8.90632H151.107Z" fill="white"></path> <path d="M4.13206 3.43555C4.13206 3.43555 1.56467 5.72581 0.867355 7.50713C0.0115587 9.60654 -0.273707 10.6881 0.296824 12.8829C0.930747 15.3322 3.97358 17.7815 3.97358 17.7815L5.59008 16.7636C5.49499 16.6046 5.4316 16.4455 5.4316 16.2547C5.4316 15.5867 6.2557 15.0459 7.26998 15.0777C7.55525 15.0777 7.80881 15.1413 8.06238 15.205L10.5981 13.6145C10.5981 13.6145 8.7914 12.4694 7.74542 11.5787C6.82623 10.8153 6.22401 10.1791 5.4316 9.09759V9.06578C4.86107 8.23874 4.51241 7.7616 4.13206 6.80733C3.62492 5.63039 4.13206 3.43555 4.13206 3.43555Z" fill="white"></path> <path d="M12.2474 5.88471L8.53892 0C7.905 0.381711 5.08404 2.32207 4.5452 2.95826C2.35817 4.99405 3.91128 7.82507 5.87644 9.76544C5.84474 9.76544 5.90814 9.76544 5.87644 9.76544L12.2474 5.88471Z" fill="#616161" /> <path d="M20.0442 27.1016C20.0442 27.1016 24.3232 23.7934 25.6861 21.0896C27.271 17.8769 27.8415 16.2228 27.2076 12.692C26.4469 8.74765 21.946 4.54883 21.946 4.54883L19.2835 5.98024C19.4103 6.23472 19.4737 6.521 19.4737 6.80728C19.3786 7.85699 18.0157 8.62041 16.4626 8.46136C16.0188 8.42955 15.6068 8.30232 15.2264 8.14327L11.0742 10.3699C11.0742 10.3699 13.8001 12.3739 15.3532 13.9007C16.6844 15.2367 17.6036 16.2864 18.713 18.0996L18.7447 18.1314C19.5688 19.4992 20.0442 20.2944 20.5197 21.8531C21.0585 23.698 20.0442 27.1016 20.0442 27.1016Z" fill="white"></path> <path d="M7.49219 22.298L12.6904 31.9998C13.768 31.4591 18.3957 28.7235 19.3149 27.801C22.9916 24.8428 20.868 20.1986 17.9836 16.9223C18.0153 16.9541 17.9519 16.8905 17.9836 16.9223L7.49219 22.298Z" fill="#616161" /> </svg>
+      <span class="nav__sub">Львівський цирк · партнерам</span>
+    </a>
+    <ul class="nav__list">
+      <li><a href="#audience">Аудиторія</a></li><li><a href="#dynamics">Динаміка</a></li><li><a href="#surfaces">Носії</a></li><li><a href="#services">Сервіси</a></li><li><a href="#projects">Проєкти</a></li><li><a href="#measurement">Вимірювання</a></li><li><a href="#fit">Кому підходить</a></li>
+    </ul>
+    <a class="nav__cta" href="#contact">Партнерство</a>
+  </div>
+</nav>
+<main id="main">
+
+<header class="hero" id="hero">
+  <div class="shell">
+    <p class="hero__eyebrow"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>Львівський державний цирк · 2021—2026</span></p>
+
+    <h1 class="hero__title">
+      <span class="hero__line">Вас побачать</span>
+      <span class="hero__line hero__line--jump">
+        <span class="hero__to">154 458</span>
+        <span class="hero__from">разів</span>
+      </span>
+    </h1>
+
+    <p class="hero__lead">
+      Саме стільки квитків продано на події цього залу за 5 років.
+      Кожен квиток — це людина, яка тримала його в руках, показувала на вході
+      й зберігала в телефоні до дня вистави. Разом із нею — родина поруч.
+    </p>
+
+    <dl class="hero__facts">
+      <div class="hero__fact">
+        <dt>Подій у залі</dt>
+        <dd><b>481</b><span>уже відбулись і заплановані</span></dd>
+      </div>
+      <div class="hero__fact">
+        <dt>Місць у залі</dt>
+        <dd><b>1 758</b><span>повний аншлаг за один вечір</span></dd>
+      </div>
+      <div class="hero__fact hero__fact--period">
+        <dt>Афіша працює</dt>
+        <dd><b>цілий рік</b><span>без пауз між сезонами</span></dd>
+      </div>
+    </dl>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#surfaces">Де буде ваш бренд</a>
+      <a class="btn btn--ghost" href="#audience">Хто вас побачить</a>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="audience" aria-labelledby="audience-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">01</span>Аудиторія</p>
+      <h2 class="section__title" id="audience-h">43 953 родини купили квитки — <em>і залишили 18 969 контактів</em></h2>
+      
+    </div>
+    <div class="section__body">
+<div class="callout callout--strong callout--base">
+  <div class="callout__main">
+    <p class="callout__value">18 969</p>
+    <p class="callout__label">
+      унікальних контактів глядачів цього залу — людей, які вже купували квиток
+    </p>
+    <p class="callout__period">накопичено за 2021—2026</p>
+  </div>
+  <div class="callout__aside">
+    <p class="callout__aside-value">3,5</p>
+    <p class="callout__aside-label">
+      квитка в середньому на одне замовлення. Один контакт у базі —
+      це родина, а не одна людина: реклама доходить до всіх, хто прийшов разом.
+    </p>
+  </div>
+</div>
+
+<div class="stats">
+  
+<div class="stat">
+  <span class="stat__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg></span>
+  <p class="stat__value">154 458</p>
+  <p class="stat__unit">проданих квитків</p>
+  <p class="stat__period"><span class="visually-hidden">Період: </span>2021—2026</p>
+  
+  <p class="stat__note">Кожен — окремий контакт бренду з глядачем.</p>
+</div>
+  
+<div class="stat">
+  <span class="stat__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg></span>
+  <p class="stat__value">43 953</p>
+  <p class="stat__unit">оплачених замовлень</p>
+  <p class="stat__period"><span class="visually-hidden">Період: </span>2021—2026</p>
+  
+  <p class="stat__note">Одне замовлення — кілька квитків і один контакт у базі.</p>
+</div>
+  
+<div class="stat">
+  <span class="stat__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg></span>
+  <p class="stat__value">46,0 %</p>
+  <p class="stat__unit">квитків куплено онлайн</p>
+  <p class="stat__period"><span class="visually-hidden">Період: </span>2021—2026</p>
+  
+  <p class="stat__note">Решта — каса: 83 419 квитків. Обидва канали несуть рекламу партнера.</p>
+</div>
+</div>
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Чому саме ця аудиторія цінна</h3>
+    <p>
+      До цирку приходять родинами: дорослий, який приймає рішення й платить,
+      і діти, заради яких це рішення приймається. Це той рідкісний контекст,
+      де бренд бачать одночасно обидва покоління — і бачать у хороший момент,
+      на святі, а не в рекламній паузі.
+    </p>
+    <p>
+      Похід у цирк планують заздалегідь: від купівлі квитка до самої вистави
+      минають дні або тижні. Весь цей час квиток лежить у телефоні або в сумці —
+      і разом із ним ваш бренд.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Обидва канали працюють на вас</h3>
+    <p>
+      Онлайн дає адресний контакт: електронний квиток, лист, підтвердження
+      замовлення. Каса дає друкований квиток формату А4, який глядач тримає
+      в руках увесь вечір і часто забирає додому.
+    </p>
+    <p>
+      Тому рекламу партнера бачать 100 % покупців —
+      незалежно від того, як саме вони купили квиток.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section section--inverse" id="dynamics" aria-labelledby="dynamics-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">02</span>Динаміка</p>
+      <h2 class="section__title" id="dynamics-h">Зал працює без пауз: <em>269 днів подій і 17 подій уже в афіші</em></h2>
+      
+    </div>
+    <div class="section__body">
+<figure class="figure">
+  <div class="chart chart--column" id="chart-years"><div class="chart__plot" role="img" aria-label="Стовпчикова діаграма: продані квитки по роках, 2021—2026. Найкращий повний рік — 2023, 40 919 квитків. 2026 рік ще триває. Повні значення в таблиці нижче."><ul class="chart__axis" aria-hidden="true"><li class="chart__tick"><span>50 000</span></li><li class="chart__tick"><span>37 500</span></li><li class="chart__tick"><span>25 000</span></li><li class="chart__tick"><span>12 500</span></li><li class="chart__tick"><span>0</span></li></ul><ul class="chart__cols"><li class="chart__col" style="--v:0.0849"><span class="chart__bar"><span class="chart__value">4 244</span></span><span class="chart__label">2021</span></li><li class="chart__col" style="--v:0.3445"><span class="chart__bar"><span class="chart__value">17 225</span></span><span class="chart__label">2022</span></li><li class="chart__col is-peak" style="--v:0.8184"><span class="chart__bar"><span class="chart__value">40 919</span></span><span class="chart__label">2023</span></li><li class="chart__col" style="--v:0.6501"><span class="chart__bar"><span class="chart__value">32 503</span></span><span class="chart__label">2024</span></li><li class="chart__col" style="--v:0.8155"><span class="chart__bar"><span class="chart__value">40 775</span></span><span class="chart__label">2025</span></li><li class="chart__col" style="--v:0.3758"><span class="chart__bar"><span class="chart__value">18 792</span></span><span class="chart__label">2026</span></li></ul></div><details class="chart-data"><summary>Ті самі дані таблицею</summary><div class="chart-data__scroll"><table><caption class="visually-hidden">Стовпчикова діаграма: продані квитки по роках, 2021—2026. Найкращий повний рік — 2023, 40 919 квитків. 2026 рік ще триває. Повні значення в таблиці нижче.</caption><thead><tr><th scope="col">Рік</th><th scope="col">Квитки</th></tr></thead><tbody><tr><th scope="row">2021</th><td>4 244</td></tr><tr><th scope="row">2022</th><td>17 225</td></tr><tr><th scope="row">2023</th><td>40 919</td></tr><tr><th scope="row">2024</th><td>32 503</td></tr><tr><th scope="row">2025</th><td>40 775</td></tr><tr><th scope="row">2026 (рік триває)</th><td>18 792</td></tr></tbody></table></div></details></div>
+  <figcaption>
+    Продані квитки по роках. 2026 рік ще триває —
+    у залі попереду ще 17 подій.
+  </figcaption>
+</figure>
+
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Постійний потік, а не сплеск</h3>
+    <p>
+      Це не фестиваль на три дні й не разовий тур. Зал живе цілий рік:
+      вистави йдуть щотижня, шкільні канікули дають пікові хвилі, нові програми
+      приходять на зміну попереднім. Партнер отримує не спалах охоплення,
+      а рівну присутність, яку видно місяць за місяцем.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Афіша вже розписана вперед</h3>
+    <p>
+      На момент підготовки матеріалу в афіші
+      17 майбутніх подій.
+      Тобто інтеграцію можна запускати не «колись», а на конкретні найближчі
+      покази — з відомими датами й прогнозованою кількістю глядачів.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section" id="surfaces" aria-labelledby="surfaces-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">03</span>Носії</p>
+      <h2 class="section__title" id="surfaces-h">Шість місць, де глядач бачить ваш бренд — <em>і всі вони наші</em></h2>
+      
+    </div>
+    <div class="section__body">
+<ol class="carriers carriers--six">
+<li class="carrier">
+  <p class="carrier__step">01</p>
+  <span class="carrier__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
+  <h3 class="carrier__name">Сайт цирку й сторінка вистави</h3>
+  <p class="carrier__what">Афіша, опис програми, вибір місця в залі. Тут глядач проводить найбільше часу перед покупкою — і саме тут логотип партнера читається як підтримка події, а не як банер.</p>
+  <p class="carrier__reach">Кожен, хто обирає квиток онлайн.</p>
+</li>
+<li class="carrier">
+  <p class="carrier__step">02</p>
+  <span class="carrier__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span>
+  <h3 class="carrier__name">Каса цирку</h3>
+  <p class="carrier__what">Живий контакт із глядачем у самому приміщенні: оформлення, оплата, видача квитка. Носій партнера присутній і на бланку, і в оформленні точки продажу.</p>
+  <p class="carrier__reach">83 419 квитків продано в касі за 2021—2026 — 54,0 % усього обсягу.</p>
+</li>
+<li class="carrier carrier--primary">
+  <p class="carrier__step">03</p>
+  <span class="carrier__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg></span>
+  <h3 class="carrier__name">Електронний квиток <span class="tag">головний носій</span></h3>
+  <p class="carrier__what">PDF із QR-кодом, який глядач відкриває щонайменше двічі: після покупки і на вході. Він живе в телефоні до дня вистави й переживає весь період очікування разом із вашим логотипом.</p>
+  <p class="carrier__reach">71 039 онлайн-квитків за 2021—2026.</p>
+</li>
+<li class="carrier">
+  <p class="carrier__step">04</p>
+  <span class="carrier__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg></span>
+  <h3 class="carrier__name">Друкований квиток А4</h3>
+  <p class="carrier__what">Фізичний бланк, який глядач тримає в руках увесь вечір, показує контролеру й часто забирає додому як згадку. Логотип партнера друкується просто на ньому.</p>
+  <p class="carrier__reach">Разом із цифровим — 154 458 квитків, 100 % покупців.</p>
+</li>
+<li class="carrier">
+  <p class="carrier__step">05</p>
+  <span class="carrier__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+  <h3 class="carrier__name">Лист-підтвердження замовлення</h3>
+  <p class="carrier__what">Транзакційний лист із квитком і деталями візиту. Такі листи відкривають майже завжди — без нього глядач не потрапить на виставу.</p>
+  <p class="carrier__reach">43 953 замовлень за 2021—2026.</p>
+</li>
+<li class="carrier">
+  <p class="carrier__step">06</p>
+  <span class="carrier__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+  <h3 class="carrier__name">Розсилка з афішею</h3>
+  <p class="carrier__what">Анонси нових програм по базі глядачів. Лист про подію несе логотип партнера у самому блоці анонсу — бренд приходить разом із доброю новиною, а не окремою рекламою.</p>
+  <p class="carrier__reach">18 969 унікальних контактів у базі залу.</p>
+</li></ol>
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Один ланцюг, а не розрізнені площадки</h3>
+    <p>
+      Глядач проходить усі шість точок підряд: побачив афішу — обрав місце —
+      оплатив — отримав лист — прийшов із квитком — отримав анонс наступної програми.
+      Бренд супроводжує його на кожному кроці, і це один і той самий бренд,
+      а не шість різних розміщень, які треба купувати окремо.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Ми володіємо всім ланцюгом</h3>
+    <p>
+      Сайт, каса, система продажу, генерація квитків і розсилки — усе це наша платформа.
+      Тому розміщення не треба узгоджувати з посередниками, а зміни в макеті
+      з'являються на всіх носіях одночасно, а не через тиждень.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section section--inverse" id="services" aria-labelledby="services-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">04</span>Сервіси</p>
+      <h2 class="section__title" id="services-h">Усе, що потрібно для інтеграції, <em>уже працює — нічого не треба будувати</em></h2>
+      
+    </div>
+    <div class="section__body">
+<ul class="services">
+  <li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
+    <div>
+      <h3 class="service__name">Сайт цирку</h3>
+      <p class="service__text">Афіша, сторінки вистав, схема залу й купівля — усе на нашій платформі. Логотип, банер або окремий партнерський блок розміщуються там, де глядач приймає рішення.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span>
+    <div>
+      <h3 class="service__name">Каса</h3>
+      <p class="service__text">Власна точка продажу в приміщенні цирку: оформлення, оплата, друк квитка. Це офлайн-контакт із тими, хто не купує в інтернеті.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg></span>
+    <div>
+      <h3 class="service__name">Електронний квиток</h3>
+      <p class="service__text">PDF із QR-кодом і вашим логотипом. Відкривається після покупки й на вході, зберігається в телефоні до дня вистави.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg></span>
+    <div>
+      <h3 class="service__name">Друк логотипа на фізичному квитку</h3>
+      <p class="service__text">Бланк А4 з касового друку несе ваш блок так само, як електронний. Це єдиний рекламний носій, який глядач тримає в руках увесь вечір.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+    <div>
+      <h3 class="service__name">Лист реєстрації</h3>
+      <p class="service__text">Автоматичний лист при створенні акаунта — перший контакт нового глядача з платформою. Партнерський блок присутній у шаблоні.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+    <div>
+      <h3 class="service__name">Розсилки з афішею</h3>
+      <p class="service__text">Анонси нових програм по базі глядачів. Реклама подій містить логотип партнера, тож бренд приходить у поштову скриньку разом із приводом для радості.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg></span>
+    <div>
+      <h3 class="service__name">Рекламні кампанії на наших майданчиках</h3>
+      <p class="service__text">Розміщення на всіх ресурсах, якими ми керуємо, — у віджеті продажу, на сторінках подій і в комунікації з глядачами. Один партнер — усі площини одразу.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    <div>
+      <h3 class="service__name">Сайти-партнери</h3>
+      <p class="service__text">Взаємне розміщення з майданчиками й ресурсами, з якими ми вже працюємо. Це додає охоплення поза межами нашої власної аудиторії.</p>
+    </div>
+  </li><li class="service">
+    <span class="service__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+    <div>
+      <h3 class="service__name">Детальна статистика</h3>
+      <p class="service__text">Покази реклами, переходи, сканування QR і фактичні купівлі квитків на подіях із вашим розміщенням — у розрізі кожного носія окремо.</p>
+    </div>
+  </li>
+</ul>
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Готова інфраструктура замість підрядників</h3>
+    <p>
+      Щоб отримати ті самі шість точок контакту деінде, бренду довелося б домовлятись
+      із майданчиком, квитковим оператором, поштовим сервісом і рекламною мережею окремо —
+      і зводити їхні звіти вручну. Тут усе це одна система й один договір.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Зміни вносяться за годину</h3>
+    <p>
+      Новий макет, інший логотип, сезонне гасло, окремий промокод під кампанію —
+      усе це наші власні шаблони. Оновлення з'являється одночасно на сайті,
+      у квитку й у листах, без погоджень із третіми сторонами.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section" id="projects" aria-labelledby="projects-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">05</span>Проєкти</p>
+      <h2 class="section__title" id="projects-h">Не банер, а спільний проєкт — <em>з приводом, іменем і результатом</em></h2>
+      
+    </div>
+    <div class="section__body">
+<ul class="kpis kpis--projects">
+  <li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+    <span class="kpi__t">Іменний показ</span>
+    <span class="kpi__d">Вистава за підтримки партнера: бренд у назві показу, в афіші, на квитку й у розсилці. Найсильніша форма присутності — глядач запам’ятовує, хто подарував йому вечір.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg></span>
+    <span class="kpi__t">Спільна квиткова механіка</span>
+    <span class="kpi__d">Промокод або спеціальна ціна для клієнтів партнера. Працює у нашій системі нативно, тож кожне спрацювання видно окремим рядком у звіті.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg></span>
+    <span class="kpi__t">Сезонні й святкові кампанії</span>
+    <span class="kpi__d">Новорічні покази, канікули, День захисту дітей — вікна, коли попит на сімейний дозвілля найвищий. Партнер заходить із готовим приводом, а не з абстрактним банером.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+    <span class="kpi__t">Соціальні програми</span>
+    <span class="kpi__d">Квитки для родин військових, дітей з прифронтових громад, підопічних фондів. Партнер фінансує покази, ми забезпечуємо організацію, облік і прозору звітність по кожному квитку.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg></span>
+    <span class="kpi__t">Промо для залучення нової аудиторії</span>
+    <span class="kpi__d">Кампанії на наших ресурсах і в партнерських мережах, щоб привести в зал тих, хто ще не був. Це зростання аудиторії понад ту, що вже є, — і воно вимірюється.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    <span class="kpi__t">Крос-промо з майданчиками-партнерами</span>
+    <span class="kpi__d">Взаємні розміщення з ресурсами, з якими ми вже працюємо. Охоплення виходить за межі нашої власної бази без додаткового медіабюджету.</span></li>
+</ul>
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Партнер отримує привід говорити про себе</h3>
+    <p>
+      Реклама на носії — це охоплення. Спільний проєкт — це інформаційний привід:
+      про нього можна розповісти у власних каналах партнера, показати керівництву
+      як результат і повторити наступного сезону.
+      Один аншлаг — це 1 758 людей в одному місці в один вечір.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Ми приводимо аудиторію, а не тільки показуємо логотип</h3>
+    <p>
+      У нас уже є 18 969 контактів глядачів цього залу
+      й інструменти, щоб до них звернутись. Промо-кампанія партнера спирається
+      на цю базу як на стартову точку, а далі працює на розширення —
+      і кожен новий глядач лишається в системі.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section section--inverse" id="measurement" aria-labelledby="measurement-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">06</span>Вимірювання</p>
+      <h2 class="section__title" id="measurement-h">Ви побачите не «охоплення», а <em>покази й куплені квитки в одному звіті</em></h2>
+      
+    </div>
+    <div class="section__body">
+<ul class="kpis">
+  <li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg></span>
+    <span class="kpi__t">Покази реклами</span>
+    <span class="kpi__d">Скільки разів ваш блок показано на сайті, у квитку та в листах — окремо по кожному носію.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg></span>
+    <span class="kpi__t">Сканування QR</span>
+    <span class="kpi__d">Скільки глядачів реально прийшли на подію з вашим розміщенням і пройшли контроль.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+    <span class="kpi__t">Спрацювання промокоду</span>
+    <span class="kpi__d">Прямий доказ покупки, атрибутованої партнеру — з датою й подією.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    <span class="kpi__t">Переходи на ваш ресурс</span>
+    <span class="kpi__d">Скільки людей із наших носіїв перейшли на сайт або в застосунок партнера.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg></span>
+    <span class="kpi__t">Куплені квитки</span>
+    <span class="kpi__d">Скільки квитків продано саме на події з вашою рекламою — у розрізі дат і програм.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg></span>
+    <span class="kpi__t">Структура замовлень</span>
+    <span class="kpi__d">Скільки квитків в одному замовленні та який канал — онлайн чи каса.</span></li>
+</ul>
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Носій і каса — одна система</h3>
+    <p>
+      Зовнішня реклама вміє показати покази. Ми показуємо покази й те, що сталось далі:
+      той самий глядач, який побачив ваш блок, купив квиток у нашій системі.
+      Між рекламою й покупкою немає чужого посередника, тому й немає розриву в даних.
+    </p>
+    <p>
+      За весь час роботи залу через цю систему пройшло
+      154 458 квитків і 43 953 замовлень —
+      і кожне з них має дату, канал та подію.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Звітність під рішення, а не під галочку</h3>
+    <p>
+      Зріз готується по кожному носію окремо: сайт, квиток, лист, розсилка.
+      Видно, який саме носій приніс результат, і де варто підсилити наступного сезону.
+      Формат вивантаження узгоджуємо під ваші внутрішні вимоги.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section" id="fit" aria-labelledby="fit-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">07</span>Кому підходить</p>
+      <h2 class="section__title" id="fit-h">Чому бренду вигідніше зайти сюди, <em>ніж купувати охоплення деінде</em></h2>
+      
+    </div>
+    <div class="section__body">
+<ul class="kpis kpis--why">
+  <li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+    <span class="kpi__t">Сімейна аудиторія в повному складі</span>
+    <span class="kpi__d">Дорослий, який приймає рішення й платить, і діти, заради яких це рішення приймається — разом, в один вечір. У середньому 3,5 квитка на замовлення.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span>
+    <span class="kpi__t">Контекст, який позичає довіру</span>
+    <span class="kpi__d">Державний цирк — інституція з репутацією й історією. Бренд поруч із нею читається як підтримка культури, а не як черговий рекламодавець.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg></span>
+    <span class="kpi__t">Присутність у момент оплати</span>
+    <span class="kpi__d">Ваш блок стоїть там, де людина підтверджує оплату й завершує покупку. Це найкоротша відстань між увагою й дією, яку взагалі можна купити.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+    <span class="kpi__t">Результат, який можна показати керівництву</span>
+    <span class="kpi__d">Не «медійне охоплення», а покази, переходи, промокоди й куплені квитки в одному звіті по кожному носію.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+    <span class="kpi__t">Власна база, а не орендований трафік</span>
+    <span class="kpi__d">18 969 унікальних контактів глядачів, до яких ми звертаємось напряму. Цю аудиторію не треба перекуповувати щомісяця.</span></li><li class="kpi"><span class="kpi__icon"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg></span>
+    <span class="kpi__t">Довга присутність, а не спалах</span>
+    <span class="kpi__d">Афіша працює цілий рік. Партнерство живе сезонами, а не тижнями, і встигає закріпитись у пам’яті глядача.</span></li>
+</ul>
+
+<h3 class="h3 h3--spaced">Категорії, яким це підходить найкраще</h3>
+<ul class="kinds">
+  <li class="kind">Фінансові та страхові сервіси</li><li class="kind">Телеком і мобільні оператори</li><li class="kind">Мережі роздрібної торгівлі та супермаркети</li><li class="kind">Товари для дітей, іграшки, дитяче харчування</li><li class="kind">Ресторани, кав’ярні та сімейні заклади</li><li class="kind">Медичні та аптечні мережі</li><li class="kind">Забудовники й девелопери житла</li><li class="kind">Освітні проєкти та дитячі студії</li><li class="kind">Благодійні фонди й соціальні програми</li>
+</ul>
+
+<div class="split">
+  <div class="split__col">
+    <h3 class="h3">Один партнер на категорію</h3>
+    <p>
+      Ми не ставимо поруч двох конкурентів. Бренд, який заходить першим,
+      отримує категорію в цьому залі за собою — і всі шість носіїв без сусідів,
+      які відтягують увагу.
+    </p>
+  </div>
+  <div class="split__col">
+    <h3 class="h3">Вхід без довгої підготовки</h3>
+    <p>
+      Інфраструктура вже працює, афіша вже розписана, аудиторія вже зібрана:
+      43 953 замовлень пройшло через цю систему.
+      Від домовленості до першого показу з вашим логотипом — тижні, а не квартали.
+    </p>
+  </div>
+</div></div>
+  </div>
+</section>
+
+<section class="section section--inverse section--cta" id="contact" aria-labelledby="contact-h">
+  <div class="shell">
+    <div class="section__head">
+      <p class="section__eyebrow"><span class="section__index">08</span>Далі</p>
+      <h2 class="section__title" id="contact-h">Заберіть цю аудиторію собі</h2>
+      
+    </div>
+    <div class="section__body">
+<div class="cta">
+  <div class="cta__pitch">
+    <p class="cta__lead">
+      154 458 проданих квитків, 18 969 контактів глядачів
+      і шість носіїв, якими ми керуємо самі. Усе це вже працює —
+      лишилось поставити туди ваш бренд.
+    </p>
+    <ul class="list list--check">
+      <li>Покажемо зріз по залу: хто купує, коли й на які програми.</li>
+      <li>Складемо макети під кожен носій — від сайту до друкованого квитка.</li>
+      <li>Зафіксуємо, що саме рахуємо, ще до старту кампанії.</li>
+      <li>Запропонуємо формат спільного проєкту під ваші цілі на сезон.</li>
+    </ul>
+  </div>
+
+  <div class="cta__action">
+    <div class="contact-card">
+      <p class="contact-card__label">Партнерам і спонсорам</p>
+      <a class="contact-card__mail" href="mailto:business@soldout.com.ua?subject=%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%D0%B7%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%BC%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%BD%D0%B8%D0%BC%20%D1%86%D0%B8%D1%80%D0%BA%D0%BE%D0%BC">
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span>business@soldout.com.ua</span>
+      </a>
+      <a class="btn btn--primary btn--lg" href="mailto:business@soldout.com.ua?subject=%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%D0%B7%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%BC%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%BD%D0%B8%D0%BC%20%D1%86%D0%B8%D1%80%D0%BA%D0%BE%D0%BC">
+        Обговорити партнерство
+      </a>
+      <p class="contact-card__alt">
+        Питання щодо квитків —
+        <a href="mailto:support@soldout.com.ua">support@soldout.com.ua</a>
+      </p>
+      <p class="contact-card__entity">ПП «СОЛДАУТ»</p>
+    </div>
+  </div>
+</div></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" id="method" aria-labelledby="method-h">
+  <div class="shell">
+    <h2 class="footer__title" id="method-h">Методологія і межі даних</h2>
+
+    <div class="footer__grid">
+      <section class="footer__block" aria-labelledby="fb-1">
+        <h3 class="h3" id="fb-1">Звідки цифри</h3>
+        <p>
+          Усі показники стосуються виключно Львівський державний цирк
+          і вивантажені напряму з робочої системи продажу квитків
+          станом на 2026-09-22.
+        </p>
+        <p>
+          Це фактичні продажі за весь час роботи майданчика на платформі —
+          2021—2026,
+          включно з подіями, які ще попереду. Не оцінки й не екстраполяція.
+        </p>
+      </section>
+
+      <section class="footer__block" aria-labelledby="fb-2">
+        <h3 class="h3" id="fb-2">Як рахуємо</h3>
+        <ul class="list">
+          <li>Квиток — оплачений і не повернутий. Скасовані покази в підрахунок не входять.</li>
+          <li>Контакт — унікальна електронна адреса глядача, який уже купував квиток у цей зал.</li>
+          <li>Онлайн і каса рахуються окремо, але обидва канали несуть рекламу партнера.</li>
+        </ul>
+      </section>
+
+      <section class="footer__block" aria-labelledby="fb-3">
+      </section>
+    </div>
+
+    <p class="footer__contact">
+      Партнерські звернення — <a href="mailto:business@soldout.com.ua">business@soldout.com.ua</a>
+      · підтримка покупців — <a href="mailto:support@soldout.com.ua">support@soldout.com.ua</a>
+      · ПП «СОЛДАУТ»
+    </p>
+  </div>
+</footer>
+<script>
+(function () {
+  var root = document.documentElement;
+  if (!root.classList.contains('js')) return;
+
+  var groups = [
+    ['.hero__eyebrow', '.hero__title', '.hero__lead', '.hero__facts > *', '.hero__cta'],
+    ['.section__head', '.figure', '.chart', '.callout', '.stats > *', '.carriers > *',
+     '.steps > *', '.kpis > *', '.split__col', '.cta__pitch', '.cta__action',
+     '.footer__block'],
+  ];
+  var nodes = [];
+  groups.forEach(function (sel) {
+    sel.forEach(function (s) {
+      Array.prototype.forEach.call(document.querySelectorAll(s), function (el) {
+        if (nodes.indexOf(el) === -1) nodes.push(el);
+      });
+    });
+  });
+  nodes.forEach(function (el) { el.classList.add('reveal'); });
+
+  /* Те, що вже у в'юпорті на завантаженні, показуємо одразу — без блимання. */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var siblings = e.target.parentElement
+        ? Array.prototype.filter.call(e.target.parentElement.children, function (c) {
+            return c.classList.contains('reveal');
+          })
+        : [];
+      var i = siblings.indexOf(e.target);
+      e.target.style.setProperty('--reveal-delay', (i > 0 ? Math.min(i, 5) * 70 : 0) + 'ms');
+      e.target.classList.add('is-in');
+      io.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+  nodes.forEach(function (el) {
+    if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in');
+    else io.observe(el);
+  });
+
+  /* Страховка: якщо IntersectionObserver з якоїсь причини не спрацює,
+     скрол усе одно покаже контент. Прихованим нічого не лишиться. */
+  var sweep = function () {
+    var left = 0;
+    nodes.forEach(function (el) {
+      if (el.classList.contains('is-in')) return;
+      if (el.getBoundingClientRect().top < window.innerHeight * 1.2) el.classList.add('is-in');
+      else left++;
+    });
+    if (!left) window.removeEventListener('scroll', sweep);
+  };
+  window.addEventListener('scroll', sweep, { passive: true });
+  setTimeout(sweep, 1200);
+
+  /* Хедер отримує межу лише після скролу */
+  var nav = document.querySelector('.nav');
+  if (nav) {
+    var onScroll = function () { nav.classList.toggle('is-stuck', window.scrollY > 8); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+})();
+</script>
+</body>
+</html>
